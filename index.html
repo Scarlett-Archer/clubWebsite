@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dunmow Padel Club</title>
+    <link rel="stylesheet" href="./resources/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bad+Script&family=Creepster&family=Gabriela&family=Itim&family=Kurale&family=Lora&family=Merriweather:ital@0;1&family=News+Cycle&family=Work+Sans:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./resources/script.js" async></script>
+  </head>
+  <body>
+    <section class="heading-container">
+      <nav class="header">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#contact">Bookings</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </nav>
+      <header>
+        <h2>Dunmow Padel Club</h2>
+      </header>
+    </section>
+    <!--Main section-->
+    <main>
+      <div class="sign-up">
+        <h4>Meet up. Work out. Have fun.</h4>
+        <h5>Join and be apart of something special...</h5>
+        <div id="sign-up-message">
+          <form action="form.html" method="POST">
+            <label for="sign-up-email">Email:</label>
+            <input
+              type="text"
+              id="sign-up-email"
+              name="sign-up-email"
+              required
+            />
+          </form>
+        </div>
+        <button id="sign-up-button">Sign up</button>
+      </div>
+      <h4 class="mobile">Meet up. Work out. Have fun.</h4>
+    </main>
+    <!-- Contact form -->
+    <div class="contact-form" id="contact">
+      <h3>Contact us</h3>
+      <table>
+        <form action="form.html" method="POST">
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" name="name" id="name" required /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="text" name="email" id="email" required /></td>
+          </tr>
+          <tr>
+            <td><label for="message">Message:</label></td>
+            <td>
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                columns="10"
+                required
+              >
+              </textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" id="submit" value="Submit" /></td>
+          </tr>
+        </form>
+      </table>
+    </div>
+    <!--Flexbox section-->
+    <div class="container-image">
+      <h2>Come and join us!</h2>
+      <div class="flex-item item-1">
+        <img src="./resources/media/court.jpg" alt="padel racket and ball" />
+      </div>
+      <div class="flex-item item-2">
+        <img src="./resources/media/team.jpg" alt="padel team playing padel" />
+      </div>
+      <div class="flex-item item-3">
+        <img src="./resources/media/serve.jpg" alt="serving on a padel court" />
+      </div>
+      <div class="flex-item item-4">
+        <img
+          src="./resources/media/background.jpg"
+          alt="serving on a padel court"
+        />
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <nav class="footer">
+        <h4>Dunmow Padel Club</h4>
+        <h5>
+          Dunmow Sports Centre <br />
+          Rosemary Hill <br />
+          CM1 4PB
+        </h5>
+        <h5>contact@dpc.com</h5>
+      </nav>
+    </footer>
+  </body>
+</html>
